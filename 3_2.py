@@ -1,7 +1,10 @@
 def find_person(name):
     lst_nm = ["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
-    # print(lst_nm[name])
-     while name in lst_nm:
-        print(name,' нашелся')
+    i = 0
+    while i < len(lst_nm):
+        if lst_nm[i] == name:
+            print("нашелся ", name)
+            break
+        i+=1
 
-print(find_person('Валера'))
+find_person('Валера')
